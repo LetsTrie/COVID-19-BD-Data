@@ -1,0 +1,1852 @@
+[
+  {
+    "date": "March-26",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": null,
+    "quarantine": 4099,
+    "released": 3754
+  },
+  {
+    "date": "March-27",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": null,
+    "quarantine": 3374,
+    "released": 4303
+  },
+  {
+    "date": "March-28",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": 47,
+    "quarantine": 2099,
+    "released": 4063
+  },
+  {
+    "date": "March-29",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": null,
+    "quarantine": 2790,
+    "released": 4617
+  },
+  {
+    "date": "March-30",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": null,
+    "quarantine": 1804,
+    "released": 4428
+  },
+  {
+    "date": "March-31",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": null,
+    "quarantine": 1914,
+    "released": 4771
+  },
+  {
+    "date": "April-01",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": 1,
+    "isolation": null,
+    "quarantine": 1459,
+    "released": 5130
+  },
+  {
+    "date": "April-02",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": null,
+    "quarantine": 1413,
+    "released": 3615
+  },
+  {
+    "date": "April-03",
+    "test": null,
+    "confirmed": null,
+    "caseRate": null,
+    "death": null,
+    "isolation": null,
+    "quarantine": 552,
+    "released": 2604
+  },
+  {
+    "date": "April-04",
+    "test": 434,
+    "confirmed": 9,
+    "caseRate": 2,
+    "death": 2,
+    "isolation": null,
+    "quarantine": 469,
+    "released": 2968
+  },
+  {
+    "date": "April-05",
+    "test": 367,
+    "confirmed": 18,
+    "caseRate": 5,
+    "death": 1,
+    "isolation": null,
+    "quarantine": 1120,
+    "released": 2815
+  },
+  {
+    "date": "April-06",
+    "test": 468,
+    "confirmed": 35,
+    "caseRate": 7,
+    "death": 3,
+    "isolation": null,
+    "quarantine": 739,
+    "released": 2068
+  },
+  {
+    "date": "April-07",
+    "test": 679,
+    "confirmed": 41,
+    "caseRate": 6,
+    "death": 5,
+    "isolation": null,
+    "quarantine": 638,
+    "released": 1652
+  },
+  {
+    "date": "April-08",
+    "test": 981,
+    "confirmed": 54,
+    "caseRate": 6,
+    "death": 3,
+    "isolation": 16,
+    "quarantine": 876,
+    "released": 1035
+  },
+  {
+    "date": "April-09",
+    "test": 905,
+    "confirmed": 112,
+    "caseRate": 12,
+    "death": 1,
+    "isolation": 37,
+    "quarantine": 1486,
+    "released": 856
+  },
+  {
+    "date": "April-10",
+    "test": 1184,
+    "confirmed": 94,
+    "caseRate": 8,
+    "death": 6,
+    "isolation": 24,
+    "quarantine": 2474,
+    "released": 660
+  },
+  {
+    "date": "April-11",
+    "test": 954,
+    "confirmed": 58,
+    "caseRate": 6,
+    "death": 3,
+    "isolation": 35,
+    "quarantine": 4290,
+    "released": 728
+  },
+  {
+    "date": "April-12",
+    "test": 1340,
+    "confirmed": 139,
+    "caseRate": 10,
+    "death": 4,
+    "isolation": 47,
+    "quarantine": 4945,
+    "released": 670
+  },
+  {
+    "date": "April-13",
+    "test": 1570,
+    "confirmed": 182,
+    "caseRate": 12,
+    "death": 5,
+    "isolation": 84,
+    "quarantine": 6168,
+    "released": 1045
+  },
+  {
+    "date": "April-14",
+    "test": 1905,
+    "confirmed": 209,
+    "caseRate": 11,
+    "death": 7,
+    "isolation": 89,
+    "quarantine": 5512,
+    "released": 1039
+  },
+  {
+    "date": "April-15",
+    "test": 1740,
+    "confirmed": 219,
+    "caseRate": 13,
+    "death": 4,
+    "isolation": 71,
+    "quarantine": 11770,
+    "released": 1265
+  },
+  {
+    "date": "April-16",
+    "test": 2019,
+    "confirmed": 341,
+    "caseRate": 17,
+    "death": 10,
+    "isolation": 37,
+    "quarantine": 5214,
+    "released": 925
+  },
+  {
+    "date": "April-17",
+    "test": 2190,
+    "confirmed": 266,
+    "caseRate": 12,
+    "death": 15,
+    "isolation": 103,
+    "quarantine": 5766,
+    "released": 862
+  },
+  {
+    "date": "April-18",
+    "test": 2114,
+    "confirmed": 306,
+    "caseRate": 14,
+    "death": 9,
+    "isolation": 66,
+    "quarantine": 3815,
+    "released": 4026
+  },
+  {
+    "date": "April-19",
+    "test": 2634,
+    "confirmed": 312,
+    "caseRate": 12,
+    "death": 7,
+    "isolation": 52,
+    "quarantine": 4371,
+    "released": 1574
+  },
+  {
+    "date": "April-20",
+    "test": 2779,
+    "confirmed": 492,
+    "caseRate": 18,
+    "death": 10,
+    "isolation": 58,
+    "quarantine": 31079,
+    "released": 1845
+  },
+  {
+    "date": "April-21",
+    "test": 2974,
+    "confirmed": 434,
+    "caseRate": 15,
+    "death": 9,
+    "isolation": 89,
+    "quarantine": 5592,
+    "released": 2192
+  },
+  {
+    "date": "April-22",
+    "test": 3096,
+    "confirmed": 390,
+    "caseRate": 13,
+    "death": 10,
+    "isolation": 150,
+    "quarantine": 3567,
+    "released": 3172
+  },
+  {
+    "date": "April-23",
+    "test": 3416,
+    "confirmed": 414,
+    "caseRate": 12,
+    "death": 7,
+    "isolation": 123,
+    "quarantine": 3977,
+    "released": 3841
+  },
+  {
+    "date": "April-24",
+    "test": 3686,
+    "confirmed": 503,
+    "caseRate": 14,
+    "death": 4,
+    "isolation": 104,
+    "quarantine": 3496,
+    "released": 5095
+  },
+  {
+    "date": "April-25",
+    "test": 3337,
+    "confirmed": 309,
+    "caseRate": 9,
+    "death": 9,
+    "isolation": 46,
+    "quarantine": 2294,
+    "released": 4057
+  },
+  {
+    "date": "April-26",
+    "test": 3476,
+    "confirmed": 418,
+    "caseRate": 12,
+    "death": 5,
+    "isolation": 75,
+    "quarantine": 2891,
+    "released": 3963
+  },
+  {
+    "date": "April-27",
+    "test": 3812,
+    "confirmed": 497,
+    "caseRate": 13,
+    "death": 7,
+    "isolation": 85,
+    "quarantine": 2370,
+    "released": 4590
+  },
+  {
+    "date": "April-28",
+    "test": 4332,
+    "confirmed": 549,
+    "caseRate": 13,
+    "death": 3,
+    "isolation": 111,
+    "quarantine": 2392,
+    "released": 3231
+  },
+  {
+    "date": "April-29",
+    "test": 4968,
+    "confirmed": 641,
+    "caseRate": 13,
+    "death": 8,
+    "isolation": 104,
+    "quarantine": 2544,
+    "released": 3002
+  },
+  {
+    "date": "April-30",
+    "test": 4965,
+    "confirmed": 564,
+    "caseRate": 11,
+    "death": 5,
+    "isolation": 138,
+    "quarantine": 2182,
+    "released": 7082
+  },
+  {
+    "date": "May-01",
+    "test": 5573,
+    "confirmed": 571,
+    "caseRate": 10,
+    "death": 2,
+    "isolation": 175,
+    "quarantine": 2381,
+    "released": 3462
+  },
+  {
+    "date": "May-02",
+    "test": 5827,
+    "confirmed": 552,
+    "caseRate": 9,
+    "death": 5,
+    "isolation": 168,
+    "quarantine": 1543,
+    "released": 2850
+  },
+  {
+    "date": "May-03",
+    "test": 5368,
+    "confirmed": 665,
+    "caseRate": 12,
+    "death": 2,
+    "isolation": 65,
+    "quarantine": 2149,
+    "released": 3504
+  },
+  {
+    "date": "May-04",
+    "test": 6260,
+    "confirmed": 688,
+    "caseRate": 11,
+    "death": 5,
+    "isolation": 90,
+    "quarantine": 2742,
+    "released": 28548
+  },
+  {
+    "date": "May-05",
+    "test": 5711,
+    "confirmed": 786,
+    "caseRate": 14,
+    "death": 1,
+    "isolation": 128,
+    "quarantine": 2477,
+    "released": 3288
+  },
+  {
+    "date": "May-06",
+    "test": 6241,
+    "confirmed": 790,
+    "caseRate": 13,
+    "death": 3,
+    "isolation": 184,
+    "quarantine": 3889,
+    "released": 3872
+  },
+  {
+    "date": "May-07",
+    "test": 5867,
+    "confirmed": 706,
+    "caseRate": 12,
+    "death": 13,
+    "isolation": 107,
+    "quarantine": 2331,
+    "released": 2967
+  },
+  {
+    "date": "May-08",
+    "test": 5941,
+    "confirmed": 709,
+    "caseRate": 12,
+    "death": 7,
+    "isolation": 103,
+    "quarantine": 2619,
+    "released": 3976
+  },
+  {
+    "date": "May-09",
+    "test": 5465,
+    "confirmed": 636,
+    "caseRate": 12,
+    "death": 8,
+    "isolation": 196,
+    "quarantine": 1755,
+    "released": 3718
+  },
+  {
+    "date": "May-10",
+    "test": 5638,
+    "confirmed": 887,
+    "caseRate": 16,
+    "death": 14,
+    "isolation": 169,
+    "quarantine": 2218,
+    "released": 2979
+  },
+  {
+    "date": "May-11",
+    "test": 7208,
+    "confirmed": 1034,
+    "caseRate": 14,
+    "death": 11,
+    "isolation": 183,
+    "quarantine": 2360,
+    "released": 2439
+  },
+  {
+    "date": "May-12",
+    "test": 6773,
+    "confirmed": 969,
+    "caseRate": 14,
+    "death": 11,
+    "isolation": 152,
+    "quarantine": 1666,
+    "released": 3065
+  },
+  {
+    "date": "May-13",
+    "test": 7900,
+    "confirmed": 1162,
+    "caseRate": 15,
+    "death": 19,
+    "isolation": 150,
+    "quarantine": 2558,
+    "released": 2662
+  },
+  {
+    "date": "May-14",
+    "test": 7392,
+    "confirmed": 1041,
+    "caseRate": 14,
+    "death": 14,
+    "isolation": 201,
+    "quarantine": 3031,
+    "released": 2298
+  },
+  {
+    "date": "May-15",
+    "test": 8582,
+    "confirmed": 1202,
+    "caseRate": 14,
+    "death": 15,
+    "isolation": 259,
+    "quarantine": 2797,
+    "released": 2006
+  },
+  {
+    "date": "May-16",
+    "test": 6782,
+    "confirmed": 930,
+    "caseRate": 14,
+    "death": 16,
+    "isolation": 349,
+    "quarantine": 2510,
+    "released": 1704
+  },
+  {
+    "date": "May-17",
+    "test": 8184,
+    "confirmed": 1273,
+    "caseRate": 16,
+    "death": 14,
+    "isolation": 276,
+    "quarantine": 3634,
+    "released": 2358
+  },
+  {
+    "date": "May-18",
+    "test": 9788,
+    "confirmed": 1602,
+    "caseRate": 16,
+    "death": 21,
+    "isolation": 231,
+    "quarantine": 3412,
+    "released": 2741
+  },
+  {
+    "date": "May-19",
+    "test": 8449,
+    "confirmed": 1251,
+    "caseRate": 15,
+    "death": 21,
+    "isolation": 326,
+    "quarantine": 3531,
+    "released": 2402
+  },
+  {
+    "date": "May-20",
+    "test": 10207,
+    "confirmed": 1617,
+    "caseRate": 16,
+    "death": 16,
+    "isolation": 300,
+    "quarantine": 4011,
+    "released": 2287
+  },
+  {
+    "date": "May-21",
+    "test": 10262,
+    "confirmed": 1773,
+    "caseRate": 17,
+    "death": 22,
+    "isolation": 154,
+    "quarantine": 3312,
+    "released": 2591
+  },
+  {
+    "date": "May-22",
+    "test": 9727,
+    "confirmed": 1694,
+    "caseRate": 17,
+    "death": 24,
+    "isolation": 225,
+    "quarantine": 2560,
+    "released": 2019
+  },
+  {
+    "date": "May-23",
+    "test": 10834,
+    "confirmed": 1873,
+    "caseRate": 17,
+    "death": 20,
+    "isolation": 286,
+    "quarantine": 2322,
+    "released": 2088
+  },
+  {
+    "date": "May-24",
+    "test": 8908,
+    "confirmed": 1532,
+    "caseRate": 17,
+    "death": 28,
+    "isolation": 253,
+    "quarantine": 3063,
+    "released": 3087
+  },
+  {
+    "date": "May-25",
+    "test": 9451,
+    "confirmed": 1975,
+    "caseRate": 21,
+    "death": 21,
+    "isolation": 284,
+    "quarantine": 2384,
+    "released": 2112
+  },
+  {
+    "date": "May-26",
+    "test": 5407,
+    "confirmed": 1166,
+    "caseRate": 22,
+    "death": 21,
+    "isolation": 182,
+    "quarantine": 2452,
+    "released": 1868
+  },
+  {
+    "date": "May-27",
+    "test": 8015,
+    "confirmed": 1541,
+    "caseRate": 19,
+    "death": 22,
+    "isolation": 281,
+    "quarantine": 2789,
+    "released": 2082
+  },
+  {
+    "date": "May-28",
+    "test": 9310,
+    "confirmed": 2029,
+    "caseRate": 22,
+    "death": 15,
+    "isolation": 248,
+    "quarantine": 4001,
+    "released": 2404
+  },
+  {
+    "date": "May-29",
+    "test": 11301,
+    "confirmed": 2523,
+    "caseRate": 22,
+    "death": 23,
+    "isolation": 328,
+    "quarantine": 4900,
+    "released": 2918
+  },
+  {
+    "date": "May-30",
+    "test": 9987,
+    "confirmed": 1764,
+    "caseRate": 18,
+    "death": 28,
+    "isolation": 469,
+    "quarantine": 2220,
+    "released": 2219
+  },
+  {
+    "date": "May-31",
+    "test": 11876,
+    "confirmed": 2545,
+    "caseRate": 21,
+    "death": 40,
+    "isolation": 391,
+    "quarantine": 2947,
+    "released": 3042
+  },
+  {
+    "date": "June-01",
+    "test": 11439,
+    "confirmed": 2381,
+    "caseRate": 21,
+    "death": 22,
+    "isolation": 449,
+    "quarantine": 2707,
+    "released": 3752
+  },
+  {
+    "date": "June-02",
+    "test": 12704,
+    "confirmed": 2911,
+    "caseRate": 23,
+    "death": 37,
+    "isolation": 388,
+    "quarantine": 2506,
+    "released": 3097
+  },
+  {
+    "date": "June-03",
+    "test": 12510,
+    "confirmed": 2695,
+    "caseRate": 22,
+    "death": 37,
+    "isolation": 395,
+    "quarantine": 2428,
+    "released": 3145
+  },
+  {
+    "date": "June-04",
+    "test": 12694,
+    "confirmed": 2423,
+    "caseRate": 19,
+    "death": 35,
+    "isolation": 386,
+    "quarantine": 2375,
+    "released": 2634
+  },
+  {
+    "date": "June-05",
+    "test": 14088,
+    "confirmed": 2828,
+    "caseRate": 20,
+    "death": 30,
+    "isolation": 365,
+    "quarantine": 2245,
+    "released": 2495
+  },
+  {
+    "date": "June-06",
+    "test": 12486,
+    "confirmed": 2635,
+    "caseRate": 21,
+    "death": 35,
+    "isolation": 314,
+    "quarantine": 1789,
+    "released": 2811
+  },
+  {
+    "date": "June-07",
+    "test": 13136,
+    "confirmed": 2743,
+    "caseRate": 21,
+    "death": 42,
+    "isolation": 467,
+    "quarantine": 1975,
+    "released": 2576
+  },
+  {
+    "date": "June-08",
+    "test": 12944,
+    "confirmed": 2735,
+    "caseRate": 21,
+    "death": 42,
+    "isolation": 297,
+    "quarantine": 2228,
+    "released": 1852
+  },
+  {
+    "date": "June-09",
+    "test": 14668,
+    "confirmed": 3171,
+    "caseRate": 22,
+    "death": 45,
+    "isolation": 557,
+    "quarantine": 2602,
+    "released": 2036
+  },
+  {
+    "date": "June-10",
+    "test": 15965,
+    "confirmed": 3190,
+    "caseRate": 20,
+    "death": 37,
+    "isolation": 538,
+    "quarantine": 3156,
+    "released": 2083
+  },
+  {
+    "date": "June-11",
+    "test": 15772,
+    "confirmed": 3187,
+    "caseRate": 20,
+    "death": 37,
+    "isolation": 671,
+    "quarantine": 3161,
+    "released": 1873
+  },
+  {
+    "date": "June-12",
+    "test": 15990,
+    "confirmed": 3471,
+    "caseRate": 22,
+    "death": 46,
+    "isolation": 436,
+    "quarantine": 2888,
+    "released": 2034
+  },
+  {
+    "date": "June-13",
+    "test": 16638,
+    "confirmed": 2856,
+    "caseRate": 17,
+    "death": 44,
+    "isolation": 496,
+    "quarantine": 2412,
+    "released": 1480
+  },
+  {
+    "date": "June-14",
+    "test": 14505,
+    "confirmed": 3141,
+    "caseRate": 22,
+    "death": 32,
+    "isolation": 712,
+    "quarantine": 2792,
+    "released": 1799
+  },
+  {
+    "date": "June-15",
+    "test": 15038,
+    "confirmed": 3099,
+    "caseRate": 21,
+    "death": 38,
+    "isolation": 563,
+    "quarantine": 2922,
+    "released": 3067
+  },
+  {
+    "date": "June-16",
+    "test": 17214,
+    "confirmed": 3862,
+    "caseRate": 22,
+    "death": 53,
+    "isolation": 635,
+    "quarantine": 3421,
+    "released": 2544
+  },
+  {
+    "date": "June-17",
+    "test": 17527,
+    "confirmed": 4008,
+    "caseRate": 23,
+    "death": 43,
+    "isolation": 718,
+    "quarantine": 3041,
+    "released": 3097
+  },
+  {
+    "date": "June-18",
+    "test": 16259,
+    "confirmed": 3803,
+    "caseRate": 23,
+    "death": 38,
+    "isolation": 674,
+    "quarantine": 2821,
+    "released": 2705
+  },
+  {
+    "date": "June-19",
+    "test": 15045,
+    "confirmed": 3243,
+    "caseRate": 22,
+    "death": 45,
+    "isolation": 684,
+    "quarantine": 2585,
+    "released": 2237
+  },
+  {
+    "date": "June-20",
+    "test": 14031,
+    "confirmed": 3240,
+    "caseRate": 23,
+    "death": 37,
+    "isolation": 628,
+    "quarantine": 1538,
+    "released": 2074
+  },
+  {
+    "date": "June-21",
+    "test": 15585,
+    "confirmed": 3531,
+    "caseRate": 23,
+    "death": 39,
+    "isolation": 631,
+    "quarantine": 2819,
+    "released": 2132
+  },
+  {
+    "date": "June-22",
+    "test": 15555,
+    "confirmed": 3480,
+    "caseRate": 22,
+    "death": 38,
+    "isolation": 618,
+    "quarantine": 2663,
+    "released": 1972
+  },
+  {
+    "date": "June-23",
+    "test": 16292,
+    "confirmed": 3412,
+    "caseRate": 21,
+    "death": 43,
+    "isolation": 680,
+    "quarantine": 2414,
+    "released": 3064
+  },
+  {
+    "date": "June-24",
+    "test": 16433,
+    "confirmed": 3462,
+    "caseRate": 21,
+    "death": 37,
+    "isolation": 749,
+    "quarantine": 2631,
+    "released": 2817
+  },
+  {
+    "date": "June-25",
+    "test": 17999,
+    "confirmed": 3946,
+    "caseRate": 22,
+    "death": 39,
+    "isolation": 645,
+    "quarantine": 2656,
+    "released": 2618
+  },
+  {
+    "date": "June-26",
+    "test": 18498,
+    "confirmed": 3868,
+    "caseRate": 21,
+    "death": 40,
+    "isolation": 861,
+    "quarantine": 2922,
+    "released": 2799
+  },
+  {
+    "date": "June-27",
+    "test": 15157,
+    "confirmed": 3504,
+    "caseRate": 23,
+    "death": 34,
+    "isolation": 726,
+    "quarantine": 2312,
+    "released": 2520
+  },
+  {
+    "date": "June-28",
+    "test": 18099,
+    "confirmed": 3809,
+    "caseRate": 21,
+    "death": 43,
+    "isolation": 717,
+    "quarantine": 3090,
+    "released": 2405
+  },
+  {
+    "date": "June-29",
+    "test": 17837,
+    "confirmed": 4014,
+    "caseRate": 23,
+    "death": 45,
+    "isolation": 1028,
+    "quarantine": 3053,
+    "released": 2692
+  },
+  {
+    "date": "June-30",
+    "test": 18426,
+    "confirmed": 3682,
+    "caseRate": 20,
+    "death": 64,
+    "isolation": 749,
+    "quarantine": 2542,
+    "released": 2834
+  },
+  {
+    "date": "July-01",
+    "test": 17875,
+    "confirmed": 3775,
+    "caseRate": 21,
+    "death": 41,
+    "isolation": 955,
+    "quarantine": 2429,
+    "released": 3214
+  },
+  {
+    "date": "July-02",
+    "test": 18362,
+    "confirmed": 4019,
+    "caseRate": 22,
+    "death": 38,
+    "isolation": 960,
+    "quarantine": 2894,
+    "released": 3168
+  },
+  {
+    "date": "July-03",
+    "test": 14650,
+    "confirmed": 3114,
+    "caseRate": 21,
+    "death": 42,
+    "isolation": 887,
+    "quarantine": 2714,
+    "released": 2766
+  },
+  {
+    "date": "July-04",
+    "test": 14727,
+    "confirmed": 3288,
+    "caseRate": 22,
+    "death": 29,
+    "isolation": 744,
+    "quarantine": 2242,
+    "released": 1648
+  },
+  {
+    "date": "July-05",
+    "test": 13988,
+    "confirmed": 2738,
+    "caseRate": 20,
+    "death": 55,
+    "isolation": 749,
+    "quarantine": 2887,
+    "released": 2535
+  },
+  {
+    "date": "July-06",
+    "test": 14245,
+    "confirmed": 3201,
+    "caseRate": 22,
+    "death": 44,
+    "isolation": 677,
+    "quarantine": 2138,
+    "released": 2839
+  },
+  {
+    "date": "July-07",
+    "test": 13173,
+    "confirmed": 3027,
+    "caseRate": 23,
+    "death": 55,
+    "isolation": 802,
+    "quarantine": 2438,
+    "released": 2798
+  },
+  {
+    "date": "July-08",
+    "test": 15672,
+    "confirmed": 3489,
+    "caseRate": 22,
+    "death": 46,
+    "isolation": 792,
+    "quarantine": 2691,
+    "released": 3134
+  },
+  {
+    "date": "July-09",
+    "test": 15632,
+    "confirmed": 3360,
+    "caseRate": 21,
+    "death": 41,
+    "isolation": 879,
+    "quarantine": 2282,
+    "released": 2174
+  },
+  {
+    "date": "July-10",
+    "test": 13488,
+    "confirmed": 2949,
+    "caseRate": 22,
+    "death": 37,
+    "isolation": 893,
+    "quarantine": 2600,
+    "released": 2169
+  },
+  {
+    "date": "July-11",
+    "test": 11193,
+    "confirmed": 2686,
+    "caseRate": 24,
+    "death": 30,
+    "isolation": 853,
+    "quarantine": 2142,
+    "released": 2227
+  },
+  {
+    "date": "July-12",
+    "test": 11059,
+    "confirmed": 2666,
+    "caseRate": 24,
+    "death": 47,
+    "isolation": 737,
+    "quarantine": 2531,
+    "released": 2900
+  },
+  {
+    "date": "July-13",
+    "test": 12423,
+    "confirmed": 3099,
+    "caseRate": 25,
+    "death": 39,
+    "isolation": 765,
+    "quarantine": 2401,
+    "released": 3273
+  },
+  {
+    "date": "July-14",
+    "test": 13453,
+    "confirmed": 3163,
+    "caseRate": 24,
+    "death": 33,
+    "isolation": 861,
+    "quarantine": 2050,
+    "released": 2618
+  },
+  {
+    "date": "July-15",
+    "test": 14002,
+    "confirmed": 3533,
+    "caseRate": 25,
+    "death": 33,
+    "isolation": 949,
+    "quarantine": 2525,
+    "released": 2931
+  },
+  {
+    "date": "July-16",
+    "test": 12889,
+    "confirmed": 2733,
+    "caseRate": 21,
+    "death": 39,
+    "isolation": 867,
+    "quarantine": 2439,
+    "released": 2864
+  },
+  {
+    "date": "July-17",
+    "test": 13460,
+    "confirmed": 3034,
+    "caseRate": 23,
+    "death": 51,
+    "isolation": 812,
+    "quarantine": 2261,
+    "released": 2847
+  },
+  {
+    "date": "July-18",
+    "test": 10923,
+    "confirmed": 2709,
+    "caseRate": 25,
+    "death": 34,
+    "isolation": 779,
+    "quarantine": 1781,
+    "released": 2314
+  },
+  {
+    "date": "July-19",
+    "test": 10625,
+    "confirmed": 2459,
+    "caseRate": 23,
+    "death": 37,
+    "isolation": 609,
+    "quarantine": 2686,
+    "released": 2525
+  },
+  {
+    "date": "July-20",
+    "test": 13362,
+    "confirmed": 2928,
+    "caseRate": 22,
+    "death": 50,
+    "isolation": 823,
+    "quarantine": 2484,
+    "released": 2906
+  },
+  {
+    "date": "July-21",
+    "test": 12898,
+    "confirmed": 3057,
+    "caseRate": 24,
+    "death": 41,
+    "isolation": 710,
+    "quarantine": 2022,
+    "released": 2375
+  },
+  {
+    "date": "July-22",
+    "test": 12050,
+    "confirmed": 2744,
+    "caseRate": 23,
+    "death": 42,
+    "isolation": 824,
+    "quarantine": 2429,
+    "released": 2452
+  },
+  {
+    "date": "July-23",
+    "test": 12398,
+    "confirmed": 2856,
+    "caseRate": 23,
+    "death": 50,
+    "isolation": 697,
+    "quarantine": 2859,
+    "released": 2324
+  },
+  {
+    "date": "July-24",
+    "test": 12027,
+    "confirmed": 2548,
+    "caseRate": 21,
+    "death": 35,
+    "isolation": 709,
+    "quarantine": 1960,
+    "released": 2022
+  },
+  {
+    "date": "July-25",
+    "test": 10446,
+    "confirmed": 2520,
+    "caseRate": 24,
+    "death": 38,
+    "isolation": 649,
+    "quarantine": 1709,
+    "released": 1789
+  },
+  {
+    "date": "July-26",
+    "test": 10078,
+    "confirmed": 2275,
+    "caseRate": 23,
+    "death": 54,
+    "isolation": 667,
+    "quarantine": 2085,
+    "released": 2736
+  },
+  {
+    "date": "July-27",
+    "test": 12859,
+    "confirmed": 2772,
+    "caseRate": 22,
+    "death": 37,
+    "isolation": 550,
+    "quarantine": 2451,
+    "released": 2860
+  },
+  {
+    "date": "July-28",
+    "test": 12714,
+    "confirmed": 2960,
+    "caseRate": 23,
+    "death": 35,
+    "isolation": 713,
+    "quarantine": 1992,
+    "released": 2523
+  },
+  {
+    "date": "July-29",
+    "test": 14127,
+    "confirmed": 3009,
+    "caseRate": 21,
+    "death": 35,
+    "isolation": 827,
+    "quarantine": 1955,
+    "released": 2570
+  },
+  {
+    "date": "July-30",
+    "test": 12937,
+    "confirmed": 2695,
+    "caseRate": 21,
+    "death": 48,
+    "isolation": 635,
+    "quarantine": 2453,
+    "released": 2272
+  },
+  {
+    "date": "July-31",
+    "test": 12614,
+    "confirmed": 2772,
+    "caseRate": 22,
+    "death": 28,
+    "isolation": 759,
+    "quarantine": 2089,
+    "released": 2690
+  },
+  {
+    "date": "August-01",
+    "test": 8802,
+    "confirmed": 2199,
+    "caseRate": 25,
+    "death": 21,
+    "isolation": 771,
+    "quarantine": 1655,
+    "released": 2207
+  },
+  {
+    "date": "August-02",
+    "test": 3684,
+    "confirmed": 886,
+    "caseRate": 24,
+    "death": 22,
+    "isolation": 324,
+    "quarantine": 992,
+    "released": 1895
+  },
+  {
+    "date": "August-03",
+    "test": 4249,
+    "confirmed": 1356,
+    "caseRate": 32,
+    "death": 30,
+    "isolation": 468,
+    "quarantine": 999,
+    "released": 1514
+  },
+  {
+    "date": "August-04",
+    "test": 7712,
+    "confirmed": 1918,
+    "caseRate": 25,
+    "death": 50,
+    "isolation": 374,
+    "quarantine": 1700,
+    "released": 2438
+  },
+  {
+    "date": "August-05",
+    "test": 11160,
+    "confirmed": 2654,
+    "caseRate": 24,
+    "death": 33,
+    "isolation": 758,
+    "quarantine": 1847,
+    "released": 2613
+  },
+  {
+    "date": "August-06",
+    "test": 12708,
+    "confirmed": 2977,
+    "caseRate": 23,
+    "death": 39,
+    "isolation": 955,
+    "quarantine": 2399,
+    "released": 2919
+  },
+  {
+    "date": "August-07",
+    "test": 12699,
+    "confirmed": 2851,
+    "caseRate": 22,
+    "death": 27,
+    "isolation": 815,
+    "quarantine": 2060,
+    "released": 2281
+  },
+  {
+    "date": "August-08",
+    "test": 11737,
+    "confirmed": 2611,
+    "caseRate": 22,
+    "death": 32,
+    "isolation": 864,
+    "quarantine": 2184,
+    "released": 1851
+  },
+  {
+    "date": "August-09",
+    "test": 10759,
+    "confirmed": 2487,
+    "caseRate": 23,
+    "death": 34,
+    "isolation": 628,
+    "quarantine": 2056,
+    "released": 2258
+  },
+  {
+    "date": "August-10",
+    "test": 12849,
+    "confirmed": 2907,
+    "caseRate": 23,
+    "death": 39,
+    "isolation": 815,
+    "quarantine": 2346,
+    "released": 2604
+  },
+  {
+    "date": "August-11",
+    "test": 14820,
+    "confirmed": 2996,
+    "caseRate": 20,
+    "death": 33,
+    "isolation": 863,
+    "quarantine": 2884,
+    "released": 2559
+  },
+  {
+    "date": "August-12",
+    "test": 14751,
+    "confirmed": 2995,
+    "caseRate": 20,
+    "death": 42,
+    "isolation": 862,
+    "quarantine": 2023,
+    "released": 1951
+  },
+  {
+    "date": "August-13",
+    "test": 13162,
+    "confirmed": 2617,
+    "caseRate": 20,
+    "death": 44,
+    "isolation": 813,
+    "quarantine": 2432,
+    "released": 2408
+  },
+  {
+    "date": "August-14",
+    "test": 12856,
+    "confirmed": 2766,
+    "caseRate": 22,
+    "death": 34,
+    "isolation": 739,
+    "quarantine": 1898,
+    "released": 2076
+  },
+  {
+    "date": "August-15",
+    "test": 12891,
+    "confirmed": 2644,
+    "caseRate": 21,
+    "death": 34,
+    "isolation": 734,
+    "quarantine": 1954,
+    "released": 1827
+  },
+  {
+    "date": "August-16",
+    "test": 10018,
+    "confirmed": 2024,
+    "caseRate": 20,
+    "death": 32,
+    "isolation": 579,
+    "quarantine": 1526,
+    "released": 1611
+  },
+  {
+    "date": "August-17",
+    "test": 12523,
+    "confirmed": 2595,
+    "caseRate": 21,
+    "death": 37,
+    "isolation": 640,
+    "quarantine": 1871,
+    "released": 1831
+  },
+  {
+    "date": "August-18",
+    "test": 14630,
+    "confirmed": 3200,
+    "caseRate": 22,
+    "death": 46,
+    "isolation": 821,
+    "quarantine": 2483,
+    "released": 1897
+  },
+  {
+    "date": "August-19",
+    "test": 14678,
+    "confirmed": 2747,
+    "caseRate": 19,
+    "death": 41,
+    "isolation": 737,
+    "quarantine": 1947,
+    "released": 1886
+  },
+  {
+    "date": "August-20",
+    "test": 14059,
+    "confirmed": 2868,
+    "caseRate": 20,
+    "death": 41,
+    "isolation": 766,
+    "quarantine": 1969,
+    "released": 2325
+  },
+  {
+    "date": "August-21",
+    "test": 12943,
+    "confirmed": 2401,
+    "caseRate": 19,
+    "death": 39,
+    "isolation": 580,
+    "quarantine": 2470,
+    "released": 1838
+  },
+  {
+    "date": "August-22",
+    "test": 11356,
+    "confirmed": 2265,
+    "caseRate": 20,
+    "death": 46,
+    "isolation": 550,
+    "quarantine": 1219,
+    "released": 1685
+  },
+  {
+    "date": "August-23",
+    "test": 10801,
+    "confirmed": 1973,
+    "caseRate": 18,
+    "death": 34,
+    "isolation": 573,
+    "quarantine": 1624,
+    "released": 2209
+  },
+  {
+    "date": "August-24",
+    "test": 13382,
+    "confirmed": 2485,
+    "caseRate": 19,
+    "death": 42,
+    "isolation": 488,
+    "quarantine": 1897,
+    "released": 1848
+  },
+  {
+    "date": "August-25",
+    "test": 14153,
+    "confirmed": 2545,
+    "caseRate": 18,
+    "death": 45,
+    "isolation": 806,
+    "quarantine": 2242,
+    "released": 2208
+  },
+  {
+    "date": "August-26",
+    "test": 15070,
+    "confirmed": 2519,
+    "caseRate": 17,
+    "death": 54,
+    "isolation": 653,
+    "quarantine": 1849,
+    "released": 1905
+  },
+  {
+    "date": "August-27",
+    "test": 15124,
+    "confirmed": 2436,
+    "caseRate": 16,
+    "death": 45,
+    "isolation": 610,
+    "quarantine": 1811,
+    "released": 2111
+  },
+  {
+    "date": "August-28",
+    "test": 13741,
+    "confirmed": 2211,
+    "caseRate": 16,
+    "death": 47,
+    "isolation": 569,
+    "quarantine": 1579,
+    "released": 1697
+  },
+  {
+    "date": "August-29",
+    "test": 11689,
+    "confirmed": 2131,
+    "caseRate": 18,
+    "death": 32,
+    "isolation": 565,
+    "quarantine": 1160,
+    "released": 1403
+  },
+  {
+    "date": "August-30",
+    "test": 11934,
+    "confirmed": 1897,
+    "caseRate": 16,
+    "death": 42,
+    "isolation": 410,
+    "quarantine": 2048,
+    "released": 1473
+  },
+  {
+    "date": "August-31",
+    "test": 12454,
+    "confirmed": 2174,
+    "caseRate": 17,
+    "death": 33,
+    "isolation": 494,
+    "quarantine": 1378,
+    "released": 1780
+  },
+  {
+    "date": "September-01",
+    "test": 12209,
+    "confirmed": 1950,
+    "caseRate": 16,
+    "death": 35,
+    "isolation": 629,
+    "quarantine": 2131,
+    "released": 2333
+  },
+  {
+    "date": "September-02",
+    "test": 15204,
+    "confirmed": 2582,
+    "caseRate": 17,
+    "death": 35,
+    "isolation": 589,
+    "quarantine": 2003,
+    "released": 1933
+  },
+  {
+    "date": "September-03",
+    "test": 14422,
+    "confirmed": 2158,
+    "caseRate": 15,
+    "death": 32,
+    "isolation": 613,
+    "quarantine": 1946,
+    "released": 1948
+  },
+  {
+    "date": "September-04",
+    "test": 13073,
+    "confirmed": 1929,
+    "caseRate": 15,
+    "death": 29,
+    "isolation": 401,
+    "quarantine": 1673,
+    "released": 1384
+  },
+  {
+    "date": "September-05",
+    "test": 12847,
+    "confirmed": 1950,
+    "caseRate": 15,
+    "death": 35,
+    "isolation": 378,
+    "quarantine": 1000,
+    "released": 1218
+  },
+  {
+    "date": "September-06",
+    "test": 11354,
+    "confirmed": 1592,
+    "caseRate": 14,
+    "death": 32,
+    "isolation": 392,
+    "quarantine": 1494,
+    "released": 1628
+  },
+  {
+    "date": "September-07",
+    "test": 15412,
+    "confirmed": 2202,
+    "caseRate": 14,
+    "death": 37,
+    "isolation": 434,
+    "quarantine": 1436,
+    "released": 1995
+  },
+  {
+    "date": "September-08",
+    "test": 14973,
+    "confirmed": 1892,
+    "caseRate": 13,
+    "death": 36,
+    "isolation": 363,
+    "quarantine": 1625,
+    "released": 1666
+  },
+  {
+    "date": "September-09",
+    "test": 14755,
+    "confirmed": 1827,
+    "caseRate": 12,
+    "death": 41,
+    "isolation": 400,
+    "quarantine": 1400,
+    "released": 1712
+  },
+  {
+    "date": "September-10",
+    "test": 15559,
+    "confirmed": 1892,
+    "caseRate": 12,
+    "death": 41,
+    "isolation": 355,
+    "quarantine": 1456,
+    "released": 1946
+  },
+  {
+    "date": "September-11",
+    "test": 14747,
+    "confirmed": 1792,
+    "caseRate": 12,
+    "death": 34,
+    "isolation": 345,
+    "quarantine": 1441,
+    "released": 1714
+  },
+  {
+    "date": "September-12",
+    "test": 10723,
+    "confirmed": 1282,
+    "caseRate": 12,
+    "death": 34,
+    "isolation": 338,
+    "quarantine": 822,
+    "released": 1209
+  },
+  {
+    "date": "September-13",
+    "test": 12999,
+    "confirmed": 1476,
+    "caseRate": 11,
+    "death": 31,
+    "isolation": 208,
+    "quarantine": 1403,
+    "released": 1936
+  },
+  {
+    "date": "September-14",
+    "test": 14216,
+    "confirmed": 1812,
+    "caseRate": 13,
+    "death": 26,
+    "isolation": 430,
+    "quarantine": 1523,
+    "released": 1701
+  },
+  {
+    "date": "September-15",
+    "test": 14050,
+    "confirmed": 1724,
+    "caseRate": 12,
+    "death": 43,
+    "isolation": 288,
+    "quarantine": 1596,
+    "released": 1613
+  },
+  {
+    "date": "September-16",
+    "test": 13360,
+    "confirmed": 1615,
+    "caseRate": 12,
+    "death": 21,
+    "isolation": 312,
+    "quarantine": 1170,
+    "released": 2254
+  },
+  {
+    "date": "September-17",
+    "test": 13673,
+    "confirmed": 1593,
+    "caseRate": 12,
+    "death": 36,
+    "isolation": 331,
+    "quarantine": 1223,
+    "released": 1778
+  },
+  {
+    "date": "September-18",
+    "test": 12730,
+    "confirmed": 1541,
+    "caseRate": 12,
+    "death": 22,
+    "isolation": 277,
+    "quarantine": 1366,
+    "released": 1413
+  },
+  {
+    "date": "September-19",
+    "test": 13170,
+    "confirmed": 1567,
+    "caseRate": 12,
+    "death": 32,
+    "isolation": 372,
+    "quarantine": 718,
+    "released": 1007
+  },
+  {
+    "date": "September-20",
+    "test": 11591,
+    "confirmed": 1544,
+    "caseRate": 13,
+    "death": 26,
+    "isolation": 235,
+    "quarantine": 1204,
+    "released": 1321
+  },
+  {
+    "date": "September-21",
+    "test": 13053,
+    "confirmed": 1705,
+    "caseRate": 13,
+    "death": 40,
+    "isolation": 329,
+    "quarantine": 1258,
+    "released": 1592
+  },
+  {
+    "date": "September-22",
+    "test": 14164,
+    "confirmed": 1557,
+    "caseRate": 11,
+    "death": 28,
+    "isolation": 261,
+    "quarantine": 1016,
+    "released": 1517
+  },
+  {
+    "date": "September-23",
+    "test": 14150,
+    "confirmed": 1666,
+    "caseRate": 12,
+    "death": 37,
+    "isolation": 262,
+    "quarantine": 1393,
+    "released": 1258
+  },
+  {
+    "date": "September-24",
+    "test": 12900,
+    "confirmed": 1540,
+    "caseRate": 12,
+    "death": 28,
+    "isolation": 243,
+    "quarantine": 912,
+    "released": 1283
+  },
+  {
+    "date": "September-25",
+    "test": 12473,
+    "confirmed": 1383,
+    "caseRate": 11,
+    "death": 21,
+    "isolation": 226,
+    "quarantine": 920,
+    "released": 2229
+  },
+  {
+    "date": "September-26",
+    "test": 10765,
+    "confirmed": 1106,
+    "caseRate": 10,
+    "death": 36,
+    "isolation": 213,
+    "quarantine": 658,
+    "released": 946
+  }
+]
