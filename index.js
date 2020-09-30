@@ -2,102 +2,129 @@ const cheerio = require('cheerio');
 const request = require('request-promise');
 const fs = require('fs').promises;
 
-const { getAllDaysWithinRange } = require('./helper/time');
+const { getAllDaysWithinRange, formatDate } = require('./helper/time');
 const { objectToCSV } = require('./helper/csv');
 
-let COLUMN_SIZE = 8;
-
-/*
- Columns:
- -------- 
- 0: Date
- 1: Test
- 2: Confirmed Case
- 3: Case Rate
- 4: Confirmed Death
- 5: Isolation
- 6: Quarantine 
- 7: Released
-
- */
-
-// From 26 March 2020 to today
-let daylist = getAllDaysWithinRange('2020-03-26');
+// From 08 March 2020 to today
+let daylist = getAllDaysWithinRange('2020-03-08');
 
 let dayMapping = {};
 let finalData = [];
 
 daylist.forEach((day, index) => {
   dayMapping[day] = index;
-  finalData[index] = new Array(COLUMN_SIZE).fill(null);
+  finalData[index] = {
+    Date: day,
+    'Daily Test': null,
+    Confirmed: null,
+    Recovered: null,
+    Death: null,
+    Isolation: null,
+    Quarantine: null,
+    Released: null,
+    'Total Tested': null,
+    'Total Cases': null,
+    'Total Recovered': null,
+    'Total Death': null,
+    'Case Rate': null,
+  };
 });
 
-let URL = 'http://dashboard.dghs.gov.bd/webportal/pages/covid19.php';
+/*
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  ||| Get Data From DGHS |||
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+let DGHS = 'http://dashboard.dghs.gov.bd/webportal/pages/covid19.php';
 let formData = { form: { period: 'LAST_6_MONTH' } };
 
-request
-  .post(URL, formData)
-  .then(LetsStartScraping)
+let promise1 = request.post(DGHS, formData);
+
+/*
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  ||| Get Data From Wikipedia |||
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+let WikiLink = 'https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Bangladesh';
+
+let promise2 = request.post(WikiLink);
+
+// Resolve All Promises
+
+Promise.all([promise1, promise2])
+  .then(async (res) => {
+    try {
+      let data = await fs.readFile('./data/data.json', 'utf-8');
+      recheckFile(data);
+    } catch (err) {
+      console.error(err);
+    }
+
+    getDataFromDghs(res[0]);
+    getDataFromWiki(res[1]);
+
+    await fs.writeFile('./data/data.json', JSON.stringify(finalData));
+    await fs.writeFile('./data/data.csv', objectToCSV(finalData));
+  })
   .catch((err) => console.log(err));
 
-async function LetsStartScraping(body) {
-  const $ = cheerio.load(body);
-
-  let data;
-
-  // date, labTest, confirmedCase, caseRate
-  data = date_LabTest_confirmedCase_CaseRate($);
-  for (let i = 1; i < data.length; i++) {
-    const mainIndex = dayMapping[data[i][0]];
-    finalData[mainIndex][0] = data[i][0]; // Date
-    finalData[mainIndex][1] = data[i][1]; // Lab Test
-    finalData[mainIndex][2] = data[i][2]; // Confirmed Case
-    finalData[mainIndex][3] = data[i][3]; // Case Rate
-  }
-
-  // confirmedDeath
-  data = confirmedDeath($);
-  for (let i = 0; i < data.length; i++) {
-    const mainIndex = dayMapping[data[i][0]];
-    finalData[mainIndex][0] = data[i][0]; // Date
-    finalData[mainIndex][4] = data[i][1]; // Confirmed Death
-  }
-
-  // isolation
-  data = isolation($);
-  for (let i = 0; i < data.length; i++) {
-    const mainIndex = dayMapping[data[i][0]];
-    finalData[mainIndex][0] = data[i][0]; // Date
-    finalData[mainIndex][5] = data[i][1]; // isolation
-  }
-
-  data = quarantine_Released($);
-  for (let i = 0; i < data.length; i++) {
-    const mainIndex = dayMapping[data[i][0]];
-    finalData[mainIndex][0] = data[i][0]; // Date
-    finalData[mainIndex][6] = data[i][1]; // quarantine
-    finalData[mainIndex][7] = data[i][2]; // released
-  }
-
-  // Object
-  const eachDayObject = finalData.map((f) => ({
-    date: f[0],
-    test: f[1],
-    confirmed: f[2],
-    caseRate: f[3],
-    death: f[4],
-    isolation: f[5],
-    quarantine: f[6],
-    released: f[7],
-  }));
-
-  const csv = objectToCSV(eachDayObject);
-
-  await fs.writeFile('./data/data.json', JSON.stringify(eachDayObject));
-  await fs.writeFile('./data/data.csv', csv);
+function getDataFromDghs(body) {
+  let $ = cheerio.load(body);
+  labtest_case($);
+  confirmedDeath($);
+  isolation($);
+  quarantine_Released($);
 }
 
-function date_LabTest_confirmedCase_CaseRate($) {
+function recheckFile(data) {
+  data = JSON.parse(data);
+  data.forEach((d) => {
+    Object.keys(d).forEach((k) => {
+      if (d[k]) {
+        finalData[dayMapping[d['Date']]][k] = d[k];
+      }
+    });
+  });
+}
+
+function getDataFromWiki(wikiBody) {
+  let $ = cheerio.load(wikiBody);
+
+  dataFromWiki($);
+}
+
+function dataFromWiki($) {
+  let selector = 'table:nth-child(138) > tbody > tr';
+  const body = $(selector);
+
+  body.each((i, em) => {
+    if (i <= 1) return;
+    let td = $(em).find('td');
+    let date = formatDate($(td[0]).contents().first().text().trim());
+
+    finalData[dayMapping[date]] = {
+      ...finalData[dayMapping[date]],
+      Date: date,
+      'Daily Test': formatAmount($, td, 5),
+      Confirmed: formatAmount($, td, 6),
+      Recovered: formatAmount($, td, 8),
+      Death: formatAmount($, td, 7),
+      'Total Tested': formatAmount($, td, 1),
+      'Total Cases': formatAmount($, td, 2),
+      'Total Recovered': formatAmount($, td, 4),
+      'Total Death': formatAmount($, td, 3),
+    };
+  });
+}
+
+function formatAmount($, td, index) {
+  let val = $(td[index]).contents().first().text().trim().split(',').join('');
+  return val ? +val : null;
+}
+
+function labtest_case($) {
   let script = $('body > script:nth-child(25)')[0].children[0].data;
   script = script.replace(/\s\s+/g, ' ');
 
@@ -114,7 +141,16 @@ function date_LabTest_confirmedCase_CaseRate($) {
   substr = substr.replace(', {role: "annotation"} ', '');
   substr = substr.replace('[ [', '[');
   substr = substr.replace('], ]', ']');
-  return JSON.parse(`[${substr}]`).slice(1);
+  let data = JSON.parse(`[${substr}]`).slice(1);
+
+  for (let d of data) {
+    finalData[dayMapping[d[0]]] = {
+      ...finalData[dayMapping[d[0]]],
+      'Daily Test': d[1],
+      Confirmed: d[2],
+      'Case Rate': d[3],
+    };
+  }
 }
 
 function confirmedDeath($) {
@@ -131,9 +167,12 @@ function confirmedDeath($) {
   str_to = ',],';
   const death = getSubstr(script, str_from, str_to);
 
-  let result = [];
-  dates.forEach((d, i) => result.push([d, death[i]]));
-  return result;
+  dates.forEach((d, i) => {
+    finalData[dayMapping[d]] = {
+      ...finalData[dayMapping[d]],
+      Death: death[i],
+    };
+  });
 }
 
 function isolation($) {
@@ -150,9 +189,12 @@ function isolation($) {
   str_to = ',] } ] });';
   const nIsolation = getSubstr(script, str_from, str_to);
 
-  let result = [];
-  dates.forEach((d, i) => result.push([d, nIsolation[i]]));
-  return result;
+  dates.forEach((d, i) => {
+    finalData[dayMapping[d]] = {
+      ...finalData[dayMapping[d]],
+      Isolation: nIsolation[i],
+    };
+  });
 }
 
 function quarantine_Released($) {
@@ -176,9 +218,13 @@ function quarantine_Released($) {
   str_to = ',] } ] }';
   const released = getSubstr(script, str_from, str_to);
 
-  let result = [];
-  dates.forEach((d, i) => result.push([d, quarantine[i], released[i]]));
-  return result;
+  dates.forEach((d, i) => {
+    finalData[dayMapping[d]] = {
+      ...finalData[dayMapping[d]],
+      Quarantine: quarantine[i],
+      Released: released[i],
+    };
+  });
 }
 
 function getSubstr(script, str_from, str_to) {
