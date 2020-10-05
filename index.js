@@ -72,6 +72,7 @@ Promise.all([promise1, promise2])
 
 function getDataFromDghs(body) {
   let $ = cheerio.load(body);
+  console.log(`Getting data from: ${DGHS}`);
   labtest_case($);
   confirmedDeath($);
   isolation($);
@@ -79,6 +80,7 @@ function getDataFromDghs(body) {
 }
 
 function recheckFile(data) {
+  console.log(`Getting data from: previous JSON file`);
   data = JSON.parse(data);
   data.forEach((d) => {
     Object.keys(d).forEach((k) => {
@@ -96,9 +98,9 @@ function getDataFromWiki(wikiBody) {
 }
 
 function dataFromWiki($) {
-  let selector = 'table:nth-child(138) > tbody > tr';
+  let selector = 'table:nth-child(140) > tbody > tr';
   const body = $(selector);
-
+  if (body.length >= 212) console.log(`Getting data from: ${WikiLink}`);
   body.each((i, em) => {
     if (i <= 1) return;
     let td = $(em).find('td');
