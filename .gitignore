@@ -1,2 +1,4 @@
 node_modules
 package-lock.json
+test_rates/node_modules
+test_rates/package-lock.json
