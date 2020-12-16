@@ -1,12 +1,13 @@
-const csvtojson = require("csvtojson");
-const {objectToCSV} = require("../helper/csv");
+const csvtojson = require('csvtojson');
+const { objectToCSV } = require('../helper/csv');
 const fs = require('fs/promises');
 
 (async () => {
   const CSV = await csvtojson().fromFile('./data.csv');
   const data = {};
-  for(let d of CSV) {
-    if(!data[d.location]) {
+  for (let d of CSV) {
+    if(!d.continent) continue;
+    if (!data[d.location]) {
       data[d.location] = {
         continent: d.continent,
         location: d.location,
@@ -21,52 +22,56 @@ const fs = require('fs/promises');
         new_cases_per_million_count: 0,
       };
     }
-    if(d.new_tests_per_thousand) {
+    if (d.new_tests_per_thousand) {
       data[d.location].new_tests_per_thousand_count++;
-      data[d.location].avg_new_tests_per_million += parseFloat(d.new_tests_per_thousand);
+      data[d.location].avg_new_tests_per_million += parseFloat(
+        d.new_tests_per_thousand
+      );
     }
 
-    if(d.hospital_beds_per_thousand) {
+    if (d.hospital_beds_per_thousand) {
       data[d.location].hospital_beds_per_thousand_count++;
-      data[d.location].avg_hospital_beds_per_thousand += parseFloat(d.hospital_beds_per_thousand);
+      data[d.location].avg_hospital_beds_per_thousand += parseFloat(
+        d.hospital_beds_per_thousand
+      );
     }
-    if(d.new_cases_per_million) {
+    if (d.new_cases_per_million) {
       data[d.location].new_cases_per_million_count++;
-      data[d.location].avg_new_cases_per_million += parseFloat(d.new_cases_per_million);
+      data[d.location].avg_new_cases_per_million += parseFloat(
+        d.new_cases_per_million
+      );
     }
   }
 
   const finalArray = [];
-  for(let key in data) {
-    let allokay = true;
-    for(let subkey in data[key]) {
-      if(!data[key][subkey]) {
-        allokay = false;
-      }
+  let tmp;
+  for (let key in data) {
+    if (data[key].new_tests_per_thousand_count) {
+      tmp = data[key].avg_new_tests_per_million;
+      tmp = ((tmp / data[key].new_tests_per_thousand_count) * 1000).toFixed(5);
+      data[key].avg_new_tests_per_million = tmp;
     }
-
-    if(!allokay) continue;
-
-    if(data[key].new_tests_per_thousand_count) {
-      data[key].avg_new_tests_per_million /=  data[key].new_tests_per_thousand_count;
-      data[key].avg_new_tests_per_million *= 1000;
-      data[key].avg_new_tests_per_million = data[key].avg_new_tests_per_million.toFixed(5);
+    if (data[key].hospital_beds_per_thousand_count) {
+      tmp = data[key].avg_hospital_beds_per_thousand;
+      tmp = (tmp / data[key].hospital_beds_per_thousand_count).toFixed(5);
+      data[key].avg_hospital_beds_per_thousand = tmp;
     }
-    if(data[key].hospital_beds_per_thousand_count) {
-      data[key].avg_hospital_beds_per_thousand /= data[key].hospital_beds_per_thousand_count;
-
-      data[key].avg_hospital_beds_per_thousand = data[key].avg_hospital_beds_per_thousand.toFixed(5);
-    }
-    if(data[key].new_cases_per_million_count) {
-      data[key].avg_new_cases_per_million /=  data[key].new_cases_per_million_count;
-
-      data[key].avg_new_cases_per_million = data[key].avg_new_cases_per_million.toFixed(5);
+    if (data[key].new_cases_per_million_count) {
+      tmp = data[key].avg_new_cases_per_million;
+      tmp = (tmp / data[key].new_cases_per_million_count).toFixed(5);
+      data[key].avg_new_cases_per_million = tmp;
     }
     delete data[key].new_tests_per_thousand_count;
     delete data[key].hospital_beds_per_thousand_count;
     delete data[key].new_cases_per_million_count;
+
+    for (let subkey in data[key]) {
+      if (!data[key][subkey]) {
+        data[key][subkey] = null;
+      }
+    }
     finalArray.push(data[key]);
   }
   finalObject = objectToCSV(finalArray);
   await fs.writeFile('modified_data.csv', finalObject);
-})()
+})();
