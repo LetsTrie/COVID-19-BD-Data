@@ -70,7 +70,9 @@ const fs = require('fs/promises');
         data[key][subkey] = null;
       }
     }
-    finalArray.push(data[key]);
+    if(data[key].avg_new_tests_per_million) {
+      finalArray.push(data[key]);
+    }
   }
   finalObject = objectToCSV(finalArray);
   await fs.writeFile('modified_data.csv', finalObject);
