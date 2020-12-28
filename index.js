@@ -98,7 +98,8 @@ function getDataFromWiki(wikiBody) {
 }
 
 function dataFromWiki($) {
-  let selector = 'table:nth-child(140) > tbody > tr';
+  // #mw-content-text > div.mw-parser-output > table:nth-child(138)
+  let selector = 'table:nth-child(138) > tbody > tr';
   const body = $(selector);
   if (body.length >= 212) console.log(`Getting data from: ${WikiLink}`);
   body.each((i, em) => {
